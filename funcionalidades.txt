@@ -1,0 +1,33 @@
+Registro administrativo:
+Obtener registro de los profesores
+Obtener  registro de un profesor
+obterner un registro expecifico de base de datos profesores
+Actualizar registro de un profesor
+Actualizar registro de un profesor
+Actualizar registro especifico profesores
+Eliminar profesor
+Eliminar profesores
+Eliminar registro especifico profesor
+
+Profesores:
+Registro estudiantes
+Obtener registro de los estudiantes
+Obtener  registro de un estudiante
+obterner un registro expecifico de base de datos estudiantes
+Actualizar registro de estudiantes
+Actualizar registro de un estuadinte
+Actualizar registro especifico de un estudiante
+Eliminar estudiante
+Eliminar estudiantes
+Eliminar un registro especifico de un estudiante
+
+Estudiante:
+Obtener su registro
+
+
+
+
+
+
+
+
