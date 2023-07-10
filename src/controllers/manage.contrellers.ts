@@ -36,7 +36,7 @@ import {
 
   router.get('/cc/:cc1', async (req,res) => {
     try{
-      const cc = req.params.cc1; 
+      const cc = req.params.cc1;
 
       const response = await getadmincc1(cc);
       res.status(response.code).json(response.message);
