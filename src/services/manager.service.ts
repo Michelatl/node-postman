@@ -129,7 +129,7 @@ const putAdmincc1 = (cc: string, body: administrator): Promise<ServiceLayerRespo
   });
 };
 
-const deleteAdmin = (): Promise<{ code: number, result: administrator[] }> => {
+const deleteAdmi = (): Promise<{ code: number, result: administrator[] }> => {
   return new Promise((resolve, reject) => {
     deleteAdmin()
       .then((data) => {
@@ -164,6 +164,6 @@ export {
     putAdmin,
     putAdmincc,
     putAdmincc1,
-    deleteAdmin
+    deleteAdmi
   };
 

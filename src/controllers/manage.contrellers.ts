@@ -7,7 +7,7 @@ import {
     putAdmin,
     putAdmincc,
     putAdmincc1,
-    deleteAdmin  } from '../services/manager.service';
+    deleteAdmi  } from '../services/manager.service';
 
   const router = express.Router();
 
@@ -87,24 +87,25 @@ import {
     }
   });
 
-  router.put('/1:cc', async function (req, res) {
-    try{
+  router.put('/1/:cc', async function (req, res) {
+    try {
       const cc = req.params.cc;
       const body = req.body;
 
       const serviceLayerResponse = await putAdmincc1(cc, body);
 
       res.status(serviceLayerResponse.code).json(serviceLayerResponse.message);
-    }catch(error){
+    } catch (error) {
       console.log(error);
-      const adminError = error as {code: number, message: string};
-      res.status(adminError.code ).json(adminError.message );
+      const adminError = error as { code: number, message: string };
+      res.status(adminError.code).json(adminError.message);
     }
   });
 
+
   router.delete('/admin', async function (req, res) {
     try{
-      const response = await deleteAdmin();
+      const response = await deleteAdmi();
       res.status(response.code).json({ result: response.result });
     }catch(error){
       console.log(error);
