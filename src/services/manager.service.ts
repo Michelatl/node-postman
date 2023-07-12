@@ -7,7 +7,7 @@ import {
     updateAdmin,
     updateAdmincc,
     updateAdmincc1,
-    deleteAdmin
+    deletAdmin
 
 } from '../data/Admin.data';
 
@@ -131,7 +131,7 @@ const putAdmincc1 = (cc: string, body: administrator): Promise<ServiceLayerRespo
 
 const deleteAdmi = (): Promise<{ code: number, result: administrator[] }> => {
   return new Promise((resolve, reject) => {
-    deleteAdmin()
+    deletAdmin()
       .then((data) => {
         const localadministratorDB: administrator[] = data as administrator[];
         resolve({ code: 200, result: localadministratorDB });

@@ -97,7 +97,7 @@ const readAdmin = (): Promise<administrator[]> => {
     });
   };
 
-  const deleteAdmi = () => {
+  const deletAdmin = () => {
     return new Promise((resolve, reject) => {
       try {
         if((administratorDB.length === 0)== null){
@@ -119,6 +119,6 @@ const readAdmin = (): Promise<administrator[]> => {
     updateAdmin,
     updateAdmincc,
     updateAdmincc1,
-    deleteAdmi
+    deletAdmin
   }
 
